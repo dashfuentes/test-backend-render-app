@@ -3,6 +3,7 @@ type Query {
     login(email:String, password:String) : String
     #Find by title
     getNoteByTitle(title:String): Note
+    validateUserEmail(email:String,password:String): String
 }
 
 type Mutation {
